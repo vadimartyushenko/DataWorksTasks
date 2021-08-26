@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
 
 namespace DataWorksTasks
 {
@@ -22,7 +21,7 @@ namespace DataWorksTasks
  {
 	 static void Main(string[] args)
 	 {
-		 Test2();
+		 Test3();
 	 }
 
 	 static void Test1()
@@ -52,5 +51,29 @@ namespace DataWorksTasks
 
 		 Console.WriteLine(result ? "Баланс скобок соблюдается" : message);
 	 }
+
+	 static void Test3()
+	 {
+		 var linkedList = new DoubleLinkedList<int>();
+
+		 linkedList.AddFirst(14);
+		 linkedList.AddFirst(1);
+		 linkedList.AddLast(18);
+
+		 foreach (var i in linkedList)
+		 {
+			  Console.WriteLine(i); 
+		 };
+
+		 linkedList.Reverse();
+
+		 Console.WriteLine("After reverse: ");
+
+		 foreach (var i in linkedList)
+		 {
+			 Console.WriteLine(i);
+		 };
+
+		}
  }
 }
