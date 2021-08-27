@@ -61,19 +61,15 @@ namespace DataWorksTasks
 		 linkedList.AddLast(18);
 
 		 foreach (var i in linkedList)
-		 {
-			  Console.WriteLine(i); 
-		 };
+			 Console.WriteLine(i); 
+
 
 		 linkedList.Reverse();
 
 		 Console.WriteLine("After reverse: ");
 
 		 foreach (var i in linkedList)
-		 {
 			 Console.WriteLine(i);
-		 };
-
-		}
+	 }
  }
 }
