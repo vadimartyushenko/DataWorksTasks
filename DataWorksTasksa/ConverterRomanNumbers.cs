@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace DataWorksTasks
 {
-	class ConverterRomanNumbers
+	public class ConverterRomanNumbers
 	{
 		private readonly Dictionary<char, int> _romanNumbers = new Dictionary<char, int>
 		{

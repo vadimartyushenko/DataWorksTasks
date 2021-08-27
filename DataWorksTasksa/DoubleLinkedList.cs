@@ -66,7 +66,8 @@ namespace DataWorksTasks
 			if (CountNode < 2)
 				return;
 
-			var startNode = First;
+			Last = First;
+			var startNode = this.First;
 			DoubleLinkedListNode<T> temp = null;
 
 			while (startNode != null)
@@ -77,7 +78,7 @@ namespace DataWorksTasks
 				
 				if (startNode.Prev == null)
 				{
-					First = startNode;
+					this.First = startNode;
 				}
 
 				startNode = startNode.Prev;

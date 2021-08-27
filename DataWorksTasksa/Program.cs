@@ -58,11 +58,13 @@ namespace DataWorksTasks
 
 		 linkedList.AddFirst(14);
 		 linkedList.AddFirst(1);
+		 linkedList.AddFirst(11);
 		 linkedList.AddLast(18);
+
+		 Console.WriteLine("Origin linked list: ");
 
 		 foreach (var i in linkedList)
 			 Console.WriteLine(i); 
-
 
 		 linkedList.Reverse();
 

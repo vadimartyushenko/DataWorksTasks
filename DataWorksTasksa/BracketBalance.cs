@@ -2,7 +2,7 @@
 
 namespace DataWorksTasks
 {
-	class BracketBalance
+	public class BracketBalance
 	{
 		public static bool Check(string source, out string errorMessage, string bracketType = "()")
 		{
